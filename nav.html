@@ -1,0 +1,74 @@
+<div class="nav">
+    <div class="logo">
+        <h1>Student </h1>
+    </div>
+    <div class="search">
+        <form action="search.php" method="get">
+            <input type="text" name="search" id="search" size="30" placeholder="search">
+            <input type="submit" value="search" class="btn">
+        </form>
+    </div>
+    <style></style>
+    <div class="links">
+        <a href="index.html">Share</a>
+        <a href="list.php">Feed</a>
+    </div>
+    <style>
+        .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: gray;
+    padding: 12px 20px;
+    color: white;
+}
+
+.nav .logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: white;
+    ;
+}
+
+.nav .search form {
+    display: flex;
+    align-items: center;
+}
+
+.nav .search input[type="text"] {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    font-size: 1em;
+}
+
+.nav .search .btn {
+    padding: 8px 14px;
+    background: #2980b9;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    color: wheat;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.nav .search .btn:hover {
+    background: seagreen;
+}
+
+.nav .links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav .links a:hover {
+    color: #dcdcdc;
+}
+
+    </style>
+</div>

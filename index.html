@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="nav">
+    <div class="logo">
+        <h1>Student </h1>
+    </div>
+    <div class="search">
+        <form action="code.php" method="get">
+            <input type="text" name="search" id="search" size="30" placeholder="search">
+            <input type="submit" value="search" class="btn">
+        </form>
+    </div>
+    <style></style>
+    <div class="links">
+        <a href="index.html">Share</a>
+        <a href="list.php">Feed</a>
+    </div>
+    <style>
+        .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: gray;
+    padding: 12px 20px;
+    color: white;
+}
+
+.nav .logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: white;
+    ;
+}
+
+.nav .search form {
+    display: flex;
+    align-items: center;
+}
+
+.nav .search input[type="text"] {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    font-size: 1em;
+}
+
+.nav .search .btn {
+    padding: 8px 14px;
+    background: #2980b9;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    color: wheat;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.nav .search .btn:hover {
+    background: seagreen;
+}
+
+.nav .links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav .links a:hover {
+    color: #dcdcdc;
+}
+
+    </style>
+</div>
+  
+  <div class="form">
+    <form action="code.php" autocomplete="on" method="post">
+        <label for="un">Username</label>
+        <input type="text" id="un" name="un" placeholder="Enter your username" required>
+        <br>
+        <label for="posts">Post</label>
+        <textarea id="posts" name="posts" placeholder="Write your post here..." required></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 50px;
+  }
+
+  .form {
+    background-color: #fff;
+    padding: 20px 30px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+</body>
+</html>
