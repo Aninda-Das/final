@@ -121,7 +121,7 @@ $run = mysqli_query($con, $query);
 
   <div class="sidebar">
     <h3>Write Feed</h3>
-    <p>📝 <a href="form.html">Create a new post</a></p>
+    <p>📝 <a href="index.html">Create a new post</a></p>
   </div>
 </div>
 
